@@ -3,6 +3,7 @@ import dotenv from 'dotenv'
 import cors from 'cors';
 import routerUsuario from './routers/usuraio_routes.js'
 import routerAuditorio from './routers/auditorios_routes.js'
+import routerConferencistas from  './routers/conferencistas_routes.js'
 import SwaggerV1 from "./swagger.js";
 
 // Inicializaciones
@@ -24,7 +25,7 @@ app.use(express.json())
 app.get('/',(req,res)=>{
     res.send("server turned on for use")
 })
-app.use('/api',routerUsuario, routerAuditorio)
+app.use('/api',routerUsuario, routerAuditorio, routerConferencistas)
 SwaggerV1(app);
 // Manejo de una ruta que no sea encontrada
 app.use((req,res)=>res.status(404).send("Endpoint no encontrado - 404"))

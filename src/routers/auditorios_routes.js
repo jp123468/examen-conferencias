@@ -120,7 +120,7 @@ router.get('/auditorios', listarAuditorios)
  *                 example: Marcelo Davila 
  *               ubicacion:
  *                 type: string
- *                 example: Sur de Quito
+ *                 example: Centro de Quito
  *               capacidad:
  *                 type: string
  *                 example: 10
@@ -153,7 +153,7 @@ router.get('/auditorios', listarAuditorios)
  *                       example: Marcelo Davila 
  *                     ubicacion:
  *                       type: string
- *                       example: Sur de Quito
+ *                       example: Centro de Quito
  *                     capacidad:
  *                       type: string
  *                       example: 10
